@@ -16,7 +16,7 @@
 </head>
 <body>
     <a href="#main" class="skip" role="link" aria-label="Skip to main content">Skip to main content</a>
-    <header class="header header--alt" role="banner">
+    <header class="header" role="banner">
         <div class="header__wrapper">
             <a href="index.html" aria-label="Go to homepage">
                 <p class="header__logo">Berre.</p>
@@ -92,119 +92,34 @@
         </div>
     </header>
     <main class="main" id="main" role="main" aria-label="Projects Main Content">
-        <section class="intro intro--smaller" role="region" aria-label="Projects Introduction">
+        <div class="background-container">
+        <section class="intro" role="region" aria-label="Projects Introduction">
             <div class="intro__text">
                 <div class="intro__text-container">
-                    <h1 class="intro__title">My Projects</h1>
+                    <h1 class="intro__title">STAM museum Website</h1>
                     <p class="intro__description">
-                        Since I am still a student, all of my current projects are school-related. However, I’m truly passionate about making a difference in the future.
+                        A recration of the website for the STAM museum in Ghent, Belgium. The website is designed to provide information about the museum, its exhibitions, and its history. It features a clean and modern design, with a focus on usability and accessibility.
                     </p>
                 </div>
+            <div class="intro__btns">
+                <a href="https://github.com/pgm-2425-atwork-1/project-1-Berre-O" target="_blank" class="btn intro--button">GitHub</a>
+                <a href="https://pgm-2425-atwork-1.github.io/project-1-Berre-O/" target="_blank" class="btn btn--reverse">Pages</a>
+            </div>
+            </div>
+            <div class="intro__image-container">
+                <img src="./src/assets/images/stam.png" alt="A picture of Berre" class="intro__image">
+                <div class="intro__image-bg" aria-hidden="true"></div>
             </div>
         </section>
-    
-            <section class="grid" role="region" aria-labelledby="projects-section">
-                <article class="card" role="article">
-                    <div class="card__image-container">
-                        <img src="./src/assets/images/figma-app.png" alt="Weather app design" class="card__img">
-                    </div>
-                    <div class="card__text">
-                        <div class="card__text-container">
-                            <h3 class="card__title">Weather app design</h3>
-                            <p class="card__description">A sketch of a weather app made in Figma.</p>
-                        </div>
-                        <a href="" class="card__link" role="link"  aria-label="View more about this project">
-                            See More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-                <article class="card" role="article">
-                    <div class="card__image-container">
-                        <img src="./src/assets/images/noplanetb.png" alt="A website about climate change" class="card__img">
-                    </div>
-                    <div class="card__text">
-                        <div class="card__text-container">
-                            <h3 class="card__title">No planet B</h3>
-                            <p class="card__description">A website for climate change.</p>
-                        </div>
-                        <a href="" class="card__link" role="link"  aria-label="View more about this project">
-                            See More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-                <article class="card" role="article">
-                    <div class="card__image-container">
-                        <img src="./src/assets/images/bestof.png" alt="Weather app design" class="card__img">
-                    </div>
-                    <div class="card__text">
-                        <div class="card__text-container">
-                            <h3 class="card__title">Best of 2024</h3>
-                            <p class="card__description">A showcase for the best things of the year 2024</p>
-                        </div>
-                        <a href="bestof.html" class="card__link" role="link"  aria-label="View more about this project">
-                            See More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-                <article class="card" role="article">
-                    <div class="card__image-container">
-                        <img src="./src/assets/images/stam.png" alt="A picture of the STAM website" class="card__img">
-                    </div>
-                    <div class="card__text">
-                        <div class="card__text-container">
-                            <h3 class="card__title">STAM museum</h3>
-                            <p class="card__description">A recreation of the STAM website.</p>
-                        </div>
-                        <a href="stam.html" class="card__link" role="link"  aria-label="View more about this project">
-                            See More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-                <article class="card" role="article">
-                    <div class="card__image-container">
-                        <img src="./src/assets/images/agency.png" alt="A picture of the Digital Agency website" class="card__img">
-                    </div>
-                    <div class="card__text">
-                        <div class="card__text-container">
-                            <h3 class="card__title">Digital Agency</h3>
-                            <p class="card__description">A website made for a hypothetical digital agency.</p>
-                        </div>
-                        <a href="" class="card__link" role="link"  aria-label="View more about this project">
-                            See More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-            </section>
+    </div>
+        <section class="text-page">
+            <div class="text-page__block">
+                <h2 class="text-page__sub-title">About This Website Recreation</h2>
+                <p class="text-page__text-block">
+                    This website is a student project that recreates the official STAM museum site as part of a web development assignment. The focus was on replicating the visual style, layout, and navigation of the original, using only HTML and CSS. All content, images, and structure have been carefully adapted to match the source, while ensuring the site remains accessible and responsive on different devices. This project demonstrates skills in front-end development, attention to detail, and an understanding of modern web standards.
+                </p>
+            </div>
+        </section>
     </main>
     <footer class="footer" role="contentinfo" aria-label="Website Footer">
         <div class="footer__wrapper">

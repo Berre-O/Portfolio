@@ -45,7 +45,7 @@
     }
 
     .intro__image {
-        min-width: 20rem;
+        min-width: 25rem;
         align-self: flex-start;
         position: absolute;
 
@@ -65,7 +65,7 @@
     }
 
     .intro__image-container {
-        width: 20rem;
+        width: 25rem;
         position: relative;
         border-radius: var(--radius);
         border: 1px solid rgba(255, 255, 255, 0.2);
