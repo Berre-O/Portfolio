@@ -1,0 +1,91 @@
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .banner__title {
+        font-size: var(--4xl);
+        font-weight: 800;
+        color: var(--banner-title);
+        font-family: "Playfair Display", "serif";
+        text-transform: capitalize;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        display: block;
+
+        animation-name: bannerSlide;
+        animation-duration: 2s;
+    }
+
+    .banner__list {
+        display: flex;
+        gap: var(--large);
+
+        @media (max-width: 800px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .banner__item {
+        background-color: var(--background-cards);
+        padding: var(--small);
+        border-radius: var(--radius);
+        transition: all 200ms ease;
+
+        color: var(--foreground-main);
+
+        display: flex;
+        flex-direction: column;
+        gap: var(--small);
+    }
+
+    .banner__item--large {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .banner__item:hover {
+        box-shadow: 2px 2px 2px var(--shadow-hover);
+    }
+
+    .banner__svg {
+        width: 1.5rem;
+        height: 1.5rem;
+
+        stroke: var(--foreground-accent);
+    }
+
+    .banner__svg-container {
+        color: var(--foreground-accent);
+        padding: var(--small);
+        background-color: var(--icon-background);
+        border-radius: 50%;
+
+        width: fit-content;
+    }
+
+    .banner__item-title {
+        font-size: var(--large);
+    }
+
+    .banner__description {
+        color: var(--foreground-accent-subtle);
+    }
+}
+
+@keyframes bannerSlide {
+    from {
+        transform: translateX(-100%);
+        filter: blur(3px);
+    }
+
+    to {
+        transform: translateX(0%);
+        filter: none;
+    }
+}

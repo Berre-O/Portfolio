@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    justify-content: center;
+    height: calc(var(--min-header-height) + 2rem);
+
+    background-color: var(--background);
+    box-shadow: none;
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+
+    transition: all 200ms ease;
+
+    padding: var(--base);
+
+    color: var(--foreground-main);
+
+    .header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: var(--max-width);
+    }
+
+    .header__right {
+        display: flex;
+        align-items: center;
+        gap: var(--xl);
+    }
+
+    .header__logo {
+        font-family: "Playfair Display", "serif";
+        font-weight: 500;
+        font-size: var(--large);
+        cursor: pointer;
+        transition: letter-spacing 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .header__logo:hover {
+        letter-spacing: 2px;
+        transform: translateY(-2px);
+    }
+
+    .header__btn {
+        border: none;
+        background: none;
+
+        border: 2px solid var(--foreground-accent);
+
+        padding: var(--small);
+        background-color: var(--icon-background);
+        border-radius: 50%;
+
+        aspect-ratio: 1;
+
+        transition: all 200ms ease;
+
+    }
+
+    .header__svg {
+        fill: var(--button-background);
+        width: 1.5rem;
+        aspect-ratio: 1;
+    }
+
+    .header__hamburger {
+        width: 3rem;
+        height: 3rem;
+        background: none;
+        border: none;
+    }
+
+    .header__hamburger-svg {
+        height: 3rem;
+        width: 3rem;
+        stroke: var(--foreground-main);
+        fill: var(--foreground-main);
+    }
+}
+
+.header--scrolled {
+    background-color: var(--background-header-scroll);
+    height: var(--min-header-height);
+    backdrop-filter: blur(10px);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.212);
+    transition-duration: 400ms;
+
+    @media (max-width: 800px) {
+        box-shadow: none;
+    }
+}
+
+.header--alt {
+    background-color: var(--background-header-scroll);
+}
+
+

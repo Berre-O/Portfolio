@@ -1,0 +1,29 @@
+.map {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    max-width: var(--max-width);
+    width: 100%;
+
+    margin-top: var(--4xl);
+    margin-bottom: var(--4xl);
+
+    .map__container {
+        width: inherit;
+        max-width: inherit;
+    }
+
+    .map__frame {
+        width: inherit;
+        max-width: inherit;
+
+        max-height: 50vh;
+        min-height: 40vh;
+
+        border-radius: var(--radius);
+        border: none;
+
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.199);
+    }
+}

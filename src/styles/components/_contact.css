@@ -1,0 +1,118 @@
+.contact {
+    max-width: var(--max-width);
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--2xl);
+
+
+    .contact__content {
+        width: 100%;
+        background-color: var(--background-cards);
+
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.199);
+
+        border-radius: var(--radius);
+
+        padding: var(--xl);
+    }
+
+    .contact__info {
+        display: flex;
+        flex-direction: column;
+        gap: var(--base);
+    }
+
+    .contact__info-title {
+        font-size: var(--large);
+    }
+
+    .contact__info-section {
+        display: flex;
+        flex-direction: column;
+        gap: var(--base);
+        font-style: normal;
+    }
+
+    .contact__info-item {
+        display: flex;
+        align-items: center;
+        gap: var(--large);
+
+    }
+    
+    .contact__svg {
+        padding: var(--small);
+        background-color: var(--icon-background);
+        border-radius: 50%;
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+
+            stroke: var(--foreground-accent);
+        }
+        
+    }
+
+    .contact__svg--social {
+
+        transition: background-color 200ms ease;
+
+        svg {
+        stroke: var(--foreground-main);
+        transition: stroke 200ms ease;
+        }
+
+    &:hover {
+        background-color: color-mix(in srgb, var(--button-background-accent), var(--button-background) 15% );
+
+        svg {
+            stroke: var(--foreground-accent);
+        }
+
+    }
+    }
+
+    .contact__info-label {
+        color: var(--foreground-accent-subtle);
+        font-weight: 300;
+    }
+
+    .contact__info-link {
+        font-size: 1.25rem;
+        font-weight: 500;
+
+        transition: color 200ms ease;
+
+        color: var(--foreground-main);
+    }
+
+    .contact__info-link:hover {
+        color: var(--foreground-accent);
+
+    }
+    
+    .contact__info-title--small {
+        font-size: 1.25rem;
+        font-weight: 400;
+        
+    }
+
+    .contact__socials {
+        display: flex;
+        flex-direction: column;
+        gap: var(--base);
+    }
+
+    .contact__social-icons {
+        display: flex;
+        gap: var(--small);
+
+    }
+
+    @media (max-width: 1000px) {
+        flex-wrap: wrap;
+    }
+}

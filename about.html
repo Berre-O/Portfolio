@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="src/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="src/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="src/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="src/assets/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="src/styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Berre</title>
+</head>
+
+<body>
+    <a href="#main" class="skip" role="link" aria-label="Skip to main content">Skip to main content</a>
+    <header class="header" role="banner">
+        <div class="header__wrapper">
+            <a href="index.html" aria-label="Go to homepage">
+                <p class="header__logo">Berre.</p>
+            </a>
+            <section class="header__right" role="navigation">
+                <nav class="nav mobile-hidden" id="nav" aria-label="Main navigation">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link nav__link--selected">About me</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="projects.html" class="nav__link">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__mode" id="mode" aria-label="Theme toggle">
+                    <button class="header__btn" id="sun" aria-label="Switch to light mode">
+                        <svg width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg"
+                            class="header__svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.4583 9.49967C13.4583 11.6862 11.6862 13.4583 9.49967 13.4583C7.31355 13.4583 5.54163 11.6862 5.54163 9.49967C5.54163 7.31355 7.3137 5.54163 9.49967 5.54163C11.6862 5.54163 13.4583 7.3137 13.4583 9.49967" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.3 1.74415C11.3 2.70751 10.5192 3.48904 9.55506 3.48904C8.5917 3.48904 7.81091 2.70751 7.81091 1.74415C7.81091 0.780788 8.5917 0 9.55506 0C10.5192 0 11.3 0.780788 11.3 1.74415" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.28875 2.74322C5.96933 3.42455 5.96933 4.52893 5.28875 5.21019C4.60743 5.89152 3.50305 5.89152 2.82178 5.21019C2.14046 4.52887 2.14046 3.42449 2.82178 2.74322C3.50311 2.06264 4.60748 2.06264 5.28875 2.74322Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.74415 7.7002C2.70751 7.7002 3.48904 8.48098 3.48904 9.44508C3.48904 10.4084 2.70751 11.1892 1.74415 11.1892C0.780788 11.1892 0 10.4084 0 9.44508C0 8.48098 0.780788 7.7002 1.74415 7.7002" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.74322 13.7112C3.42455 13.0307 4.52893 13.0307 5.21019 13.7112C5.89151 14.3926 5.89151 15.4969 5.21019 16.1782C4.52887 16.8595 3.42449 16.8595 2.74322 16.1782C2.06264 15.4969 2.06264 14.3925 2.74322 13.7112Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.1892 17.2559C11.1892 18.2192 10.4084 19 9.44508 19C8.48098 19 7.7002 18.2192 7.7002 17.2559C7.7002 16.2925 8.48098 15.511 9.44508 15.511C10.4084 15.511 11.1892 16.2925 11.1892 17.2559" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.7111 16.2568C13.0305 15.5754 13.0305 14.4711 13.7111 13.7898C14.3924 13.1085 15.4968 13.1085 16.1781 13.7898C16.8594 14.4711 16.8594 15.5755 16.1781 16.2568C15.4968 16.9374 14.3924 16.9374 13.7111 16.2568Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.2559 11.2999C16.2925 11.2999 15.511 10.5192 15.511 9.55506C15.511 8.5917 16.2925 7.81091 17.2559 7.81091C18.2192 7.81091 19 8.5917 19 9.55506C19 10.5192 18.2192 11.2999 17.2559 11.2999Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.2568 5.28887C15.5754 5.96945 14.4711 5.96945 13.7898 5.28887C13.1085 4.60755 13.1085 3.50317 13.7898 2.82191C14.4711 2.14058 15.5755 2.14058 16.2568 2.82191C16.9373 3.50323 16.9373 4.60761 16.2568 5.28887Z" />
+                        </svg>
+                    </button>
+                    <button class="header__btn" id="moon" aria-label="Switch to dark mode">
+                        <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"
+                            class="header__svg">
+                            <path
+                                d="M10.553 19.2499C13.7848 19.2499 16.7487 17.4781 18.2923 14.6247C18.4201 14.3903 18.3978 14.1037 18.2395 13.8917C18.0812 13.6796 17.8083 13.5777 17.5535 13.6357C17.0259 13.7509 16.4941 13.808 15.9706 13.808C11.8639 13.808 8.52147 10.4509 8.52147 6.32425C8.52147 5.07847 8.83395 3.84584 9.4226 2.75507C9.5504 2.52066 9.52814 2.23408 9.36984 2.02203C9.21154 1.80998 8.93863 1.70809 8.68388 1.76609C4.66543 2.63995 1.75 6.27124 1.75 10.4062C1.75 15.2832 5.69838 19.25 10.5529 19.25L10.553 19.2499Z" />
+                        </svg>
+                    </button>
+                </div>
+                <button class="header__hamburger desktop-hidden" id="hamburger" aria-label="Toggle mobile navigation">
+                    <svg class="header__hamburger-svg" id="hamburgerSvg" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_429_11066)">
+                            <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_429_11066">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <svg class="header__hamburger-svg not-visable" id="closeNav" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                      </svg>
+                </button>
+            </section>
+        </div>
+    </header>
+    <main class="main" id="main" role="main">
+        <div class="background-container">
+            <section class="intro" role="region" aria-label="Introduction">
+                <div class="intro__text">
+                    <div class="intro__text-container">
+                        <h1 class="intro__title">Hi, I'm 
+                            <span class="intro__title-blue intro__title-underlined">Berre</span>
+                        </h1>
+                        <p class="intro__description intro__description--about">
+                            A programming student specializing in back-end development. I enjoy building efficient systems, designing databases, and crafting robust APIs. Check out my projects!
+                        </p>
+                        <p class="intro__description intro__description--about">
+                            Hello! I'm Berre, a programming student with a passion for web development and creating digital experiences that make a difference.
+                        </p>
+                        <p class="intro__description intro__description--about">
+                            My interest in programming started ever since I had my first interactions with computers. I've always been amazed by the thought of being able to make these things myself.
+                        </p>
+                    </div>
+                </div>
+                <div class="intro__image-container">
+                    <img src="./src/assets/images/Me.jpg" alt="A picture of Berre" class="intro__image">
+                    <div class="intro__image-bg" aria-hidden="true"></div>
+                </div>
+            </section>
+        </div>
+        <section class="banner" aria-labelledby="skills-banner">
+            <h2 class="banner__title">Skills & Technologies Skills & Technologies Skills & Technologies</h2>
+            <ul class="banner__list">
+                <li class="banner__item banner__item--large" role="listitem">
+                    <div class="banner__svg-container" aria-hidden="true">
+                        <svg class="banner__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                          </svg>
+                          
+                        </div>
+                        <h3 class="banner__item-title">Web Development</h3>
+                        <p class="banner__description">
+                            Building responsive websites and applications using modern frameworks and technologies.
+                        </p>
+                    </li>
+                    <li class="banner__item banner__item--large" role="listitem">
+                        <div class="banner__svg-container" aria-hidden="true">
+                        <svg class="banner__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
+                            <path d="M9 18h6"></path>
+                            <path d="M10 22h4"></path>
+                          </svg>
+                        </div>
+                        <h3 class="banner__item-title">UI/UX Design</h3>
+                        <p class="banner__description">
+                            Creating intuitive and beautiful user interfaces with a focus on user experience.
+                        </p>
+                    </li>
+                    <li class="banner__item banner__item--large" role="listitem">
+                        <div class="banner__svg-container" aria-hidden="true">
+                        <svg class="banner__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                          </svg>
+                          
+                        </div>
+                        <h3 class="banner__item-title">Problem Solving</h3>
+                        <p class="banner__description">
+                            Breaking down complex challenges into manageable, elegant solutions.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="timeline" role="region" aria-label="Education Timeline">
+                <div class="timeline__intro">
+                    <h2 class="timeline__intro-title">Education</h2>
+                    <p class="timeline__intro-description">My academic journey and formal education that has shaped my knowledge and skills.</p>
+                </div>
+                <section class="timeline__content" role="list">
+                    <div class="timeline__item" role="listitem">
+                        <div class="timeline__icon" aria-hidden="true">
+                            <div class="timeline__svg-container">
+                        <svg class="timeline__svg timeline__svg--fill" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 491.561 491.561" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M430.101,0.041c-33.941,0-61.44,27.499-61.44,61.44v348.16c0,4.043,1.197,7.996,3.44,11.36l40.96,61.44
+                                        c8.106,12.16,25.974,12.16,34.081,0l40.96-61.44c2.243-3.364,3.44-7.317,3.44-11.36V61.481
+                                        C491.541,27.54,464.042,0.041,430.101,0.041z M430.101,41.001c11.32,0,20.48,9.16,20.48,20.48v40.96h-40.96v-40.96
+                                        C409.621,50.161,418.781,41.001,430.101,41.001z M430.101,434.16l-20.48-30.72V143.401h40.96V403.44L430.101,434.16z" />
+                                        <path d="M323.109,130.484c-0.025-0.031-0.048-0.062-0.073-0.092c-0.418-0.501-0.856-0.995-1.333-1.472L198.822,6.04
+                                        c-0.478-0.478-0.971-0.916-1.472-1.333c-0.03-0.025-0.062-0.049-0.092-0.073c-4.2-3.463-9.155-4.869-13.95-4.592H20.501
+                                        c-11.311,0-20.48,9.169-20.48,20.48v450.56c0,11.311,9.169,20.48,20.48,20.48h286.72c11.311,0,20.48-9.169,20.48-20.48V144.434
+                                        C327.978,139.64,326.572,134.685,323.109,130.484z M257.777,122.921h-52.957V69.964L257.777,122.921z M40.981,450.601v-409.6
+                                        h122.88v102.4c0,11.311,9.169,20.48,20.48,20.48h102.4v286.72H40.981z" />
+                                        <path d="M225.301,204.841H81.941c-11.311,0-20.48,9.169-20.48,20.48s9.169,20.48,20.48,20.48h143.36
+                                        c11.311,0,20.48-9.169,20.48-20.48S236.611,204.841,225.301,204.841z" />
+                                        <path d="M225.301,286.761H81.941c-11.311,0-20.48,9.169-20.48,20.48s9.169,20.48,20.48,20.48h143.36
+                                        c11.311,0,20.48-9.169,20.48-20.48S236.611,286.761,225.301,286.761z" />
+                                        <path d="M225.301,368.681H81.941c-11.311,0-20.48,9.169-20.48,20.48c0,11.311,9.169,20.48,20.48,20.48h143.36
+                                        c11.311,0,20.48-9.169,20.48-20.48C245.781,377.85,236.611,368.681,225.301,368.681z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="timeline__time">2024 - present</p>
+                    </div>
+                    <div class="timeline__text">
+                        <h3 class="timeline__title">Graduaat in programming</h3>
+                        <p class="timeline__location">Artevelde Hogeschool</p>
+                    </div>
+                </div>
+                <div class="timeline__item" role="listitem">
+                    <div class="timeline__icon" aria-hidden="true">
+                        <div class="timeline__svg-container">
+                            <svg class="timeline__svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.99486 7.00636C6.60433 7.39689 6.60433 8.03005 6.99486 8.42058L10.58 12.0057L6.99486 15.5909C6.60433 15.9814 6.60433 16.6146 6.99486 17.0051C7.38538 17.3956 8.01855 17.3956 8.40907 17.0051L11.9942 13.4199L15.5794 17.0051C15.9699 17.3956 16.6031 17.3956 16.9936 17.0051C17.3841 16.6146 17.3841 15.9814 16.9936 15.5909L13.4084 12.0057L16.9936 8.42059C17.3841 8.03007 17.3841 7.3969 16.9936 7.00638C16.603 6.61585 15.9699 6.61585 15.5794 7.00638L11.9942 10.5915L8.40907 7.00636C8.01855 6.61584 7.38538 6.61584 6.99486 7.00636Z" />
+                                </svg>
+                        </div>
+                        <p class="timeline__time">2023 - 2024</p>
+                    </div>
+                    <div class="timeline__text">
+                        <h3 class="timeline__title">Industrial engineering</h3>
+                        <p class="timeline__location">UGent</p>
+                    </div>
+                </div>
+                <div class="timeline__item" role="listitem">
+                    <div class="timeline__icon" aria-hidden="true">
+                        <div class="timeline__svg-container">
+                        <svg class="timeline__svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 9L12 4L2 9L6.73684 11.3684M22 9L17.2632 11.3684M22 9V17M22 9H12M6.73684 11.3684L6.12815 16.8466C6.05115 17.5396 6.4143 18.2072 7.03794 18.519C10.1616 20.0809 13.8384 20.0809 16.9621 18.519C17.5857 18.2072 17.9488 17.5396 17.8718 16.8466L17.2632 11.3684M6.73684 11.3684L12 14L17.2632 11.3684" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </div>
+                    <p class="timeline__time">2017 - 2023</p>
+                    </div>
+                    <div class="timeline__text">
+                        <h3 class="timeline__title">Industrial science</h3>
+                        <p class="timeline__location">Edugo Oostakker</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="background-container background-container--reverse" role="region" aria-label="Contact Invitation">
+            <div class="insert">
+                <h2 class="insert__title">Let's Build Something Amazing</h2>
+                <p class="insert__description">
+                    I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+                </p>
+                <a href="contact.html" class="btn insert__link" role="link" aria-label="Contact me through the contact page">
+                    Get in Touch
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo" aria-label="Website Footer">
+        <div class="footer__wrapper">
+            
+            <section class="footer__left" aria-label="Social Media Links">
+                <address class="address footer__address">
+                    <ul class="address__list footer__list">
+                        <li class="address__item footer__item">
+                            <a href="https://github.com/Berre-O" class="address__link footer__link" aria-label="GitHub profile">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
+                                width="90px" height="90px" role="img" focusable="false">
+                                <path
+                                        d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z" />
+                           </svg>
+                       </a>
+                   </li>
+                   <li class="address__item footer__item">
+                       <a href="https://www.linkedin.com/in/berre-ongena-7762b5358/" class="address__link footer__link" aria-label="LinkedIn profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                            <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                        </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </section>
+    
+            <section class="footer__right" aria-label="Footer Navigation">
+                <nav aria-label="Footer Site Links">
+                    <ul class="address__list footer__list">
+                        <li class="address__item footer__item">
+                            <a href="about.html" class="address__link footer__link">About me</a>
+                        </li>
+                        <li class="address__item footer__item">
+                            <a href="projects.html" class="address__link footer__link">Projects</a>
+                        </li>
+                        <li class="address__item footer__item">
+                            <a href="contact.html" class="address__link footer__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+    
+        </div>
+    </footer>
+    <script src="src/scripts/app.js" type="module"></script>
+</body>
+
+</html>

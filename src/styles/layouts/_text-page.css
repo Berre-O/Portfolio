@@ -1,0 +1,37 @@
+.text-page {
+    max-width: var(--max-width);
+    width: 100%;
+
+    margin-bottom: var(--4xl);
+
+    display: flex;
+    justify-content: flex-start;
+
+    .text-page__block {
+        display: flex;
+        flex-direction: column;
+        gap: var(--xl);
+    }
+
+    .text-page__subtitle {
+        font-family: "Playfair Display", "serif";
+        font-size: var(--2xl);
+    }
+    
+    .text-page__text-block {
+        display: flex;
+        justify-content: flex-start;
+        justify-self: flex-start;
+        max-width: 40vw;
+
+        color: var(--foreground-accent-subtle);
+
+        font-size: var(--large);
+
+        @media (max-width: 800px) {
+            max-width: inherit;
+        }
+
+    }
+
+}

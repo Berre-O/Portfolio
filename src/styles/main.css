@@ -1,0 +1,82 @@
+@import url("base/reset.css");
+@import url("abstracts/_variables.css");
+@import url("components/_nav.css");
+@import url("layouts/_header.css");
+@import url("layouts/_footer.css");
+@import url("layouts/_intro.css");
+@import url("components/_grid.css");
+@import url("components/_main.css");
+@import url("components/_card.css");
+@import url("components/_btn.css");
+@import url("components/_banner.css");
+@import url("components/_insert.css");
+@import url("components/_title-section.css");
+@import url("components/_contact.css");
+@import url("components/_form.css");
+@import url("components/_map.css");
+@import url("components/_timeline.css");
+@import url("animations/_view.css");
+@import url("layouts/_text-page.css");
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+html, body {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+h1,
+h1,
+h3,
+h4 {
+    font-family: "Playfair Display", "serif";
+    color: var(--foreground-main);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0rem;
+}
+
+body {
+  background-color: var(--background-lower);
+  display: flex;
+  flex-direction: column;
+
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop-hidden {
+  display: none;
+  
+  @media (max-width: 799px) {
+    display: inline-block;
+  }
+}
+
+.mobile-hidden {
+  display: inline-block;
+  
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.not-visable {
+  display: none;
+}

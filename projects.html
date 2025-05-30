@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="src/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="src/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="src/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="src/assets/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Berre</title>
+</head>
+<body>
+    <a href="#main" class="skip" role="link" aria-label="Skip to main content">Skip to main content</a>
+    <header class="header header--alt" role="banner">
+        <div class="header__wrapper">
+            <a href="index.html" aria-label="Go to homepage">
+                <p class="header__logo">Berre.</p>
+            </a>
+            <section class="header__right" role="navigation">
+                <nav class="nav mobile-hidden" id="nav" aria-label="Main navigation">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link">About me</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="projects.html" class="nav__link nav__link--selected">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__mode" id="mode" aria-label="Theme toggle">
+                    <button class="header__btn" id="sun" aria-label="Switch to light mode">
+                        <svg width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg"
+                            class="header__svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.4583 9.49967C13.4583 11.6862 11.6862 13.4583 9.49967 13.4583C7.31355 13.4583 5.54163 11.6862 5.54163 9.49967C5.54163 7.31355 7.3137 5.54163 9.49967 5.54163C11.6862 5.54163 13.4583 7.3137 13.4583 9.49967" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.3 1.74415C11.3 2.70751 10.5192 3.48904 9.55506 3.48904C8.5917 3.48904 7.81091 2.70751 7.81091 1.74415C7.81091 0.780788 8.5917 0 9.55506 0C10.5192 0 11.3 0.780788 11.3 1.74415" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.28875 2.74322C5.96933 3.42455 5.96933 4.52893 5.28875 5.21019C4.60743 5.89152 3.50305 5.89152 2.82178 5.21019C2.14046 4.52887 2.14046 3.42449 2.82178 2.74322C3.50311 2.06264 4.60748 2.06264 5.28875 2.74322Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.74415 7.7002C2.70751 7.7002 3.48904 8.48098 3.48904 9.44508C3.48904 10.4084 2.70751 11.1892 1.74415 11.1892C0.780788 11.1892 0 10.4084 0 9.44508C0 8.48098 0.780788 7.7002 1.74415 7.7002" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.74322 13.7112C3.42455 13.0307 4.52893 13.0307 5.21019 13.7112C5.89151 14.3926 5.89151 15.4969 5.21019 16.1782C4.52887 16.8595 3.42449 16.8595 2.74322 16.1782C2.06264 15.4969 2.06264 14.3925 2.74322 13.7112Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.1892 17.2559C11.1892 18.2192 10.4084 19 9.44508 19C8.48098 19 7.7002 18.2192 7.7002 17.2559C7.7002 16.2925 8.48098 15.511 9.44508 15.511C10.4084 15.511 11.1892 16.2925 11.1892 17.2559" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.7111 16.2568C13.0305 15.5754 13.0305 14.4711 13.7111 13.7898C14.3924 13.1085 15.4968 13.1085 16.1781 13.7898C16.8594 14.4711 16.8594 15.5755 16.1781 16.2568C15.4968 16.9374 14.3924 16.9374 13.7111 16.2568Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.2559 11.2999C16.2925 11.2999 15.511 10.5192 15.511 9.55506C15.511 8.5917 16.2925 7.81091 17.2559 7.81091C18.2192 7.81091 19 8.5917 19 9.55506C19 10.5192 18.2192 11.2999 17.2559 11.2999Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.2568 5.28887C15.5754 5.96945 14.4711 5.96945 13.7898 5.28887C13.1085 4.60755 13.1085 3.50317 13.7898 2.82191C14.4711 2.14058 15.5755 2.14058 16.2568 2.82191C16.9373 3.50323 16.9373 4.60761 16.2568 5.28887Z" />
+                        </svg>
+                    </button>
+                    <button class="header__btn" id="moon" aria-label="Switch to dark mode">
+                        <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"
+                            class="header__svg">
+                            <path
+                                d="M10.553 19.2499C13.7848 19.2499 16.7487 17.4781 18.2923 14.6247C18.4201 14.3903 18.3978 14.1037 18.2395 13.8917C18.0812 13.6796 17.8083 13.5777 17.5535 13.6357C17.0259 13.7509 16.4941 13.808 15.9706 13.808C11.8639 13.808 8.52147 10.4509 8.52147 6.32425C8.52147 5.07847 8.83395 3.84584 9.4226 2.75507C9.5504 2.52066 9.52814 2.23408 9.36984 2.02203C9.21154 1.80998 8.93863 1.70809 8.68388 1.76609C4.66543 2.63995 1.75 6.27124 1.75 10.4062C1.75 15.2832 5.69838 19.25 10.5529 19.25L10.553 19.2499Z" />
+                        </svg>
+                    </button>
+                </div>
+                <button class="header__hamburger desktop-hidden" id="hamburger" aria-label="Toggle mobile navigation">
+                    <svg class="header__hamburger-svg" id="hamburgerSvg" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_429_11066)">
+                            <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_429_11066">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <svg class="header__hamburger-svg not-visable" id="closeNav" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                      </svg>
+                </button>
+            </section>
+        </div>
+    </header>
+    <main class="main" id="main" role="main" aria-label="Projects Main Content">
+        <section class="intro intro--smaller" role="region" aria-label="Projects Introduction">
+            <div class="intro__text">
+                <div class="intro__text-container">
+                    <h1 class="intro__title">My Projects</h1>
+                    <p class="intro__description">
+                        Since I am still a student, all of my current projects are school-related. However, I’m truly passionate about making a difference in the future.
+                    </p>
+                </div>
+            </div>
+        </section>
+    
+            <section class="grid" role="region" aria-labelledby="projects-section">
+                <article class="card" role="article">
+                    <div class="card__image-container">
+                        <img src="./src/assets/images/figma-app.png" alt="Weather app design" class="card__img">
+                    </div>
+                    <div class="card__text">
+                        <div class="card__text-container">
+                            <h3 class="card__title">Weather app design</h3>
+                            <p class="card__description">A sketch of a weather app made in Figma.</p>
+                        </div>
+                        <a href="" class="card__link" role="link"  aria-label="View more about this project">
+                            See More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="card" role="article">
+                    <div class="card__image-container">
+                        <img src="./src/assets/images/noplanetb.png" alt="A website about climate change" class="card__img">
+                    </div>
+                    <div class="card__text">
+                        <div class="card__text-container">
+                            <h3 class="card__title">No planet B</h3>
+                            <p class="card__description">A website for climate change.</p>
+                        </div>
+                        <a href="" class="card__link" role="link"  aria-label="View more about this project">
+                            See More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="card" role="article">
+                    <div class="card__image-container">
+                        <img src="./src/assets/images/bestof.png" alt="Weather app design" class="card__img">
+                    </div>
+                    <div class="card__text">
+                        <div class="card__text-container">
+                            <h3 class="card__title">Best of 2024</h3>
+                            <p class="card__description">A showcase for the best things of the year 2024</p>
+                        </div>
+                        <a href="" class="card__link" role="link"  aria-label="View more about this project">
+                            See More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="card" role="article">
+                    <div class="card__image-container">
+                        <img src="./src/assets/images/stam.png" alt="A picture of the STAM website" class="card__img">
+                    </div>
+                    <div class="card__text">
+                        <div class="card__text-container">
+                            <h3 class="card__title">STAM museum</h3>
+                            <p class="card__description">A recreation of the STAM website.</p>
+                        </div>
+                        <a href="" class="card__link" role="link"  aria-label="View more about this project">
+                            See More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="card" role="article">
+                    <div class="card__image-container">
+                        <img src="./src/assets/images/agency.png" alt="A picture of the Digital Agency website" class="card__img">
+                    </div>
+                    <div class="card__text">
+                        <div class="card__text-container">
+                            <h3 class="card__title">Digital Agency</h3>
+                            <p class="card__description">A website made for a hypothetical digital agency.</p>
+                        </div>
+                        <a href="" class="card__link" role="link"  aria-label="View more about this project">
+                            See More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </section>
+    </main>
+    <footer class="footer" role="contentinfo" aria-label="Website Footer">
+        <div class="footer__wrapper">
+            
+            <section class="footer__left" aria-label="Social Media Links">
+                <address class="address footer__address">
+                    <ul class="address__list footer__list">
+                        <li class="address__item footer__item">
+                            <a href="https://github.com/Berre-O" class="address__link footer__link" aria-label="GitHub profile">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
+                                width="90px" height="90px" role="img" focusable="false">
+                                <path
+                                        d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z" />
+                           </svg>
+                       </a>
+                   </li>
+                   <li class="address__item footer__item">
+                       <a href="https://www.linkedin.com/in/berre-ongena-7762b5358/" class="address__link footer__link" aria-label="LinkedIn profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                            <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                        </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </section>
+    
+            <section class="footer__right" aria-label="Footer Navigation">
+                <nav aria-label="Footer Site Links">
+                    <ul class="address__list footer__list">
+                        <li class="address__item footer__item">
+                            <a href="about.html" class="address__link footer__link">About me</a>
+                        </li>
+                        <li class="address__item footer__item">
+                            <a href="projects.html" class="address__link footer__link">Projects</a>
+                        </li>
+                        <li class="address__item footer__item">
+                            <a href="contact.html" class="address__link footer__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+    
+        </div>
+    </footer>
+    <script src="src/scripts/app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+.intro {
+  max-width: var(--max-width);
+  width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    gap: var(--3xl);
+    padding-top: var(--4xl);
+    min-height: 40rem;
+
+    z-index: 2;
+
+
+    .intro__title {
+        font-size: var(--3xl);
+        align-self: center;
+        color: var(--foreground-main);
+    }
+
+    .intro__title-blue {
+        color: var(--foreground-accent);
+        font-family: "Playfair Display", "serif";
+    }
+
+    .intro__title-underlined {
+        position: relative;
+        z-index: 2;
+    }
+
+    .intro__title-underlined:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 0;
+            bottom: -5px;
+            background: color-mix(in srgb, var(--foreground-accent) 40%, transparent);
+            height: 4px;
+            transition-property: width;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+    }
+
+    .intro__title-underlined:hover:after {
+        width: 100%;
+    }
+
+    .intro__image {
+        min-width: 20rem;
+        align-self: flex-start;
+        position: absolute;
+
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: var(--radius);
+        transition: scale 300ms ease-in-out;
+        z-index: 2;
+
+        @media (max-width: 1250px) {
+          display: none;
+        }
+    }
+
+    .intro__image:hover {
+        scale: 105%;
+    }
+
+    .intro__image-container {
+        width: 20rem;
+        position: relative;
+        border-radius: var(--radius);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        height: fit-content;
+
+        @media (max-width: 1250px) {
+          display: none;
+        }
+      }
+      
+      .intro__image-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-height: fit-content;
+        height: fit-content;
+        border-radius: var(--radius);
+        z-index: -10;
+        background: linear-gradient(to bottom right, hsl(221, 83%, 53%), hsl(217, 91%, 60%));
+        opacity: 0.1;
+        filter: blur(64px);
+
+        @media (max-width: 1250px) {
+          display: none;
+        }
+      }
+
+      .intro__text {
+        display: flex;
+        flex-direction: column;
+        gap: var(--2xl);
+        max-width: 45rem;
+
+      }
+
+      .intro__description {
+        color: var(--foreground-accent-subtle);
+        font-size: var(--large);
+      }
+
+      .intro__description--about {
+        margin-bottom: var(--3xl);
+      }
+}
+
+.intro--smaller {
+  min-height: auto;
+  margin-bottom: var(--4xl);
+}
